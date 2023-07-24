@@ -2,18 +2,6 @@ import { useState } from "react";
 import "./Carousel.css";
 import Card from "./Card";
 
-
-/** Carousel: displays images and arrows to navigate through them
- * 
- * Props:
- * - photos: array of {src, caption} objects
- * - title: string describing the collection of images
- * 
- * State:
- * - currCardIdx: integer for current card index
- * 
- * App --> Carousel --> Card
- */
  function Carousel({ photos, title }) {
   const [currCardIdx, setCurrCardIdx] = useState(0);
 
